@@ -1,6 +1,6 @@
 #!/bin/bash
 
-function mvLogFiles () {
+function mvlogfiles () {
     if [ -e /var/lib/mysql/ib_logfile0 ]
     then
         echo "found ib_logfile0 moving it to ~/workspace"
@@ -25,7 +25,7 @@ function init () {
     greprc=$?
     if [[ $greprc -eq 0 ]] ; then
         echo Found the error. Moving forward
-        mvLogFiles
+        mvlogfiles
     else
     	echo Required error not found in the logs. Stopping here.
     fi

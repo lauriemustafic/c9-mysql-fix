@@ -16,7 +16,7 @@ function mvlogfiles () {
         echo "ib_logfile1 not found."
     fi
     echo "trying to start mysql"
-    service mysql start -uroot
+    service mysql start
     
 }
 
